@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Website project</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js" defer></script>   
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+
+        <!-- sidebar (navigation from left hand side) -->
+        <nav id="sidebar">
+            <ul>
+                <!-- title of navbar -->
+                <li>
+                    <span class="team-name">Team 83</span>
+                    <button onclick=toggleSidebar() id="toggle-button">
+                        <i class="material-icons">chevron_left</i>
+                    </button>
+                </li>
+
+                <!-- navigation pages -->
+                <li>
+                    <a href="index.html">
+                        <i class="material-icons">home</i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="hour-of-code.html">
+                        <i class="material-icons">code</i>
+                        <span>Hour Of Code</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="web-project.html">
+                        <i class="material-icons">web</i>
+                        <span>Web Project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="team-members.html">
+                        <i class="material-icons">account_circle</i>
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- content of the page -->
+        <main>
+            <div class="web-proj-container">
+                <h2>Preparation</h2>
+                <p>Firstly, our team leader (Murad) worked on GitHub by himself so he could remember all GitHub transactions, and he researched how to work together in one team by implementing Git at the same time. After Murad finished all his tests, he explained them to the other team members, and they also did their testing on GitHub. Then we began to write our own tasks given by our team leader. The team leader helped other teammates as he had experience in developing websites. Especially with his help, we could somehow understand all positions, types of displays, margins, paddings, etc. For better understanding, we also collaborated either online or in person.</p>
+            </div>
+            <div class="web-proj-container">
+                <h2>Practice</h2>
+                <p>Also, for understanding many concepts, we practiced a lot by writing simple pages so that we could implement them into our project. This really worked, so we could write our code correctly. Sometimes we encountered some troubles with sizes, but our team leader helped with the solutions, which made it easier to manage our pages.</p>
+            </div>
+            <div class="web-proj-container">
+                <h2>Implementation</h2>
+                <p>After we were prepared enough, we began to write our tasks. Three of us created pages with simple designs and CSS, wrote the report, and created the team logo, while our team leader created carcass of the project(sidebar and navigation) and enhanced the design using the knowledge he had gained previously. Also, he added some transitions and animations to our website, making it look better.</p>
+                <p style="font-style: italic; font-weight: 600;">Specific Explanation For Animated Border(PS: Team Leader's Explanation):</p>
+                <p>Rotating gradient animation for decoration cards (::after and ::before) an element with the class .card-image. Using a conic-gradient that dynamically changes its starting angle (--angle), the gradient spins continuously in a 5-second loop. The ::before pseudo-element is semi-transparent to enhance the layered visual effect.</p>
+                <p style="font-style: italic; font-weight: 600;">IMPORTANT NOTE:</p>
+                <p>Zip folder capacity exceeded 7 MB so our team leader used google drive to fetch images from there: leaded to very low quality of the images</p>
+            </div>
+            <div class="web-proj-container">
+                <h2>Code Academy Links Of Each Team Member</h2>
+                <p><a href="https://www.codecademy.com/profiles/mmusali23344">1) Murad Musali</a></p>
+                <p><a href="https://www.codecademy.com/profiles/AghaverdiAghazada">2) Aghaverdi Aghazada</a></p>
+                <p><a href="https://www.codecademy.com/profiles/NigarAhmadzada">3) Nigar Ahmadzada</a></p>
+                <p><a href="https://www.codecademy.com/profiles/grzayeva23798">4) Gunash Rzayeva</a></p>
+            </div>
+        </main>
+
+    </body>
+</html>

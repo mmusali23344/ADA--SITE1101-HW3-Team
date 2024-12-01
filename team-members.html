@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Team members</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js" defer></script>  
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+
+        <!-- sidebar (navigation from left hand side) -->
+        <nav id="sidebar">
+            <ul>
+                <!-- title of navbar -->
+                <li>
+                    <span class="team-name">Team 83</span>
+                    <button onclick=toggleSidebar() id="toggle-button">
+                        <i class="material-icons">chevron_left</i>
+                    </button>
+                </li>
+
+                <!-- navigation pages -->
+                <li>
+                    <a href="index.html">
+                        <i class="material-icons">home</i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="hour-of-code.html">
+                        <i class="material-icons">code</i>
+                        <span>Hour Of Code</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="web-project.html">
+                        <i class="material-icons">web</i>
+                        <span>Web Project</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="team-members.html">
+                        <i class="material-icons">account_circle</i>
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- content of the page -->
+        <main>
+            <h1>Team Members</h1>
+
+            <!-- added cards of team members -->
+            <div class="team-members-container">
+
+                <!-- cards -->
+
+                <div class="card" onclick="showDetails(1)">
+                    <div class="card-image">
+                        <img src="media/Murad Musali.jpeg" alt="student-1">
+                    </div>
+
+                    <div class="card-information">
+                        <h2>Murad Musali</h2>
+                        <p>Information Technology Major</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="showDetails(2)">
+                    <div class="card-image">
+                        <img src="media/Aghaverdi Aghazada.jpeg" alt="student-2">
+                    </div>
+
+                    <div class="card-information">
+                        <h2>Aghaverdi Aghazada</h2>
+                        <p>Computer Engineering Major</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="showDetails(3)">
+                    <div class="card-image">
+                        <img src="media/Nigar Ahmadzada.jpeg" alt="student-3">
+                    </div>
+
+                    <div class="card-information">
+                        <h2>Nigar Ahmadzada</h2>
+                        <p>Math Major</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image" onclick="showDetails(4)">
+                        <img src="media/Gunash Rzayeva.jpeg" alt="student-4">
+                    </div>
+
+                    <div class="card-information">
+                        <h2>Gunash Rzayeva</h2>
+                        <p>Math Major</p>
+                    </div>
+                </div>
+            </div>
+
+            <dialog id="details-dialog">
+
+                <section class="details">
+
+                    <div class="details-image">
+                        <img id="student-image" alt="student">
+                    </div>
+
+                    <div class="details-content">
+                        <h1>Hi, It's <span class="dialog-span" id="student-name"></span></h1>
+                        <h3 class="dialog-text">I'm a <span class="dialog-span" id="student-profession">Software Engineer</span></h3>
+                        <p id="student-info"></p>
+
+                        <div class="social-icons">
+                            <a href="#" id="linked-in-link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" id="github-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" id="twitter-link"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" id="instagram-link"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                        <a id="student-codeacademy-profile" href="#" class="dialog-button">Code Academy</a>
+                        <!-- <button onclick="closeDialog()">Close</button> -->
+                    </div>
+
+                </section>
+
+            </dialog>
+
+        </main>
+
+    </body>
+</html>
